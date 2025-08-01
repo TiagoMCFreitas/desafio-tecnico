@@ -26,7 +26,7 @@ userRouter.get("/", async (req: Request, res: Response) => {
     );
 
     if (filteredUsers.length === 0) {
-      res.status(404).send({ message: "Usuário(s) não encontrado(s)" });
+      res.status(404).send({ message: "Usuário(s) não encontrado(s) na base" });
       return { message: "Usuário(s) não encontrado(s)" };
     }
     res.status(200).send({ users: filteredUsers });
