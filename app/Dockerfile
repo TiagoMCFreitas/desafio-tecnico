@@ -6,5 +6,5 @@ RUN npm install
 RUN npm i sharp
 RUN npm run build
 RUN npx prisma generate
-CMD ["sh", "-c", "npx prisma migrate deploy && npm run start"]
+CMD ["sh", "-c", "npx prisma db push && npm run start"]
 
