@@ -19,7 +19,7 @@ Neste repositório temos 2 projetos, o primeiro que será apresentado, refere-se
 
 ## 📁 Estrutura do Projeto (app)
 
-src/
+```bash src/
 
 ├── controller
 │   ├── cryptoCurrencyController.ts
@@ -56,7 +56,7 @@ src/
 │       └── index.ts
 └── validate
     └── input
-        └── index.ts
+        └── index.ts```
 
 ## 📚 O projeto (Explicações e informações)
 
