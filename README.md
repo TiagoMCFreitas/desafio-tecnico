@@ -273,8 +273,8 @@ jobs:
 
   ```
 * Com essa estrutura pronta, basta realizar um commit no github para iniciar o projeto, porém, é possível realizar o start por meio dos comandos abaixo:
-* Entre na pasta do projeto e rode o seguinte comando **bash buildImages.sh** (Este arquivo irá criar as imagens referentes aos dois projetos citados acima, com todas as dependencias instaladas)
-* Após o comando rodar, rode docker compose up -d e o projeto estará rodando (Se é a primeira vez que o projeto é executado, o banco das criptomoedas estará vazio, porém o script estará rodando em por volta de 2 minutos todos os dados estarão presentes para consultas e filtros)
+* Entre na pasta do projeto e rode o seguinte comando ```bash bash buildImages.sh``` (Este arquivo irá criar as imagens referentes aos dois projetos citados acima, com todas as dependencias instaladas)
+* Após o comando rodar, rode ```bash docker compose up -d``` e o projeto estará rodando (Se é a primeira vez que o projeto é executado, o banco das criptomoedas estará vazio, porém o script estará rodando em por volta de 2 minutos todos os dados estarão presentes para consultas e filtros)
 
 ## Projeto Online rodando
 
