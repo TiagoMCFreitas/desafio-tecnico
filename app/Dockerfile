@@ -6,5 +6,5 @@ RUN npm install
 RUN npm i sharp
 RUN npm run build
 RUN npx prisma generate
-RUN npx prisma migrate dev
+RUN npx prisma migrate deploy
 CMD ["npm","run","start"]
