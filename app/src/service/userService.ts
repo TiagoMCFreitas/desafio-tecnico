@@ -43,7 +43,7 @@ export class UserService {
       );
       if (existingUser) {
         return {
-          message: "Usuário ja existe na base",
+          message: "Usuário ja existe",
           error: true,
         };
       }
