@@ -259,7 +259,7 @@ jobs:
 ```
 
 * Após isso, configure no repositório no github em Settings/ Secrets and variables e configure as variáveis secretas referente ao servidor de deploy
-* Em seguida, entre no servidor e clone o projeto [rodarDesafioTecnicoTruther](https://github.com/TiagoMCFreitas/rodarDesafioTecnicoTruther) para dentro da sua pasta (certifique-se que o docker e o dokcer-compose estão instalados)
+* Em seguida, entre no servidor e clone o projeto [rodarDesafioTecnico](https://github.com/TiagoMCFreitas/rodarDesafioTecnico) para dentro da sua pasta (certifique-se que o docker e o dokcer-compose estão instalados)
 * Crie os arquivos .envApp e .envSync
 * Em .envApp
 
