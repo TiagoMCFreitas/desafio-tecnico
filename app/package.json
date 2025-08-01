@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc -b",
-    "start": "node ./dist/index.js",
+    "start": "node ./app/dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "author": "",
