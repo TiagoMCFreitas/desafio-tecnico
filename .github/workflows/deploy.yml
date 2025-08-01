@@ -18,6 +18,6 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_SSH_PORT }}
           script: |
-            cd projetos/desafio-tecnico-truther
+            cd projetos/rodarDesafioTecnicoTruther
             bash buildImages.sh
             docker compose up -d
