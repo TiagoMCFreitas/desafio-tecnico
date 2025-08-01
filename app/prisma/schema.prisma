@@ -14,9 +14,20 @@ datasource db {
 }
 
 model Users {
-  id                 Int    @id @default(autoincrement())
-  name               String
-  email              String @unique
-  password           String
-  role String
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String @unique
+  password String
+  role     String
+}
+
+model CryptoCurrency {
+  id             String   @id
+  name           String?
+  marketCap      Decimal?
+  priceChange24h Decimal?
+  priceChange7D  Decimal?
+  ath            Decimal?
+  atl            Decimal?
+  currentPrice   Decimal?
 }

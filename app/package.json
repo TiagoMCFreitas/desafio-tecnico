@@ -1,0 +1,31 @@
+{
+  "name": "desafio-tecnico-truther",
+  "version": "1.0.0",
+  "description": "Desafio técnico (Criação de usuários e consumo de api de criptomoedas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -b",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
