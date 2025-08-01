@@ -22,12 +22,12 @@ model Users {
 }
 
 model CryptoCurrency {
-  id             String   @id
-  name           String?
-  marketCap      Decimal?
-  priceChange24h Decimal?
-  priceChange7D  Decimal?
-  ath            Decimal?
-  atl            Decimal?
-  currentPrice   Decimal?
+  id                    String  @id
+  name                  String?
+  marketCap             Float?
+  percentPriceChange24h Float?
+  percentPriceChange7D  Float?
+  ath                   Float?
+  atl                   Float?
+  currentPrice          Float?
 }

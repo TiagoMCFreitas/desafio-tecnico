@@ -1,0 +1,23 @@
+name: Deploy no Servidor Walle
+
+on:
+  push:
+    branches:
+      - main # altere se sua branch for diferente
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Acessar o servidor e rodar build + deploy
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_SSH_PORT }}
+          script: |
+            cd projetos/desafio-tecnico-truther
+            bash buildImages.sh
+            docker compose up -d

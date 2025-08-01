@@ -30,7 +30,7 @@ userRouter.get("/", async (req: Request, res: Response) => {
       return { message: "Usuário(s) não encontrado(s)" };
     }
     res.status(200).send({ users: filteredUsers });
-    return { users: filteredUsers };
+    return filteredUsers;
   } catch (error: any) {
     res.status(500).send({
       status: 500,

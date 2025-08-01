@@ -13,8 +13,8 @@ export type CoinsMarketFormatted = {
   id: string;
   name: string;
   marketCap: number;
-  priceChange24h: number;
-  priceChange7D: number;
+  percentPriceChange24h: number;
+  percentPriceChange7D: number;
   ath: number;
   atl: number;
   currentPrice: number;
