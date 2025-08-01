@@ -19,6 +19,7 @@ export const FilterUsersSchema = z
       .optional(),
   })
   .strict()
-  .describe("Campo inválido");
+  .describe("Campo inválido")
+  .openapi("FilterUsers");
 
 export type FilterUsersDto = z.infer<typeof FilterUsersSchema>;

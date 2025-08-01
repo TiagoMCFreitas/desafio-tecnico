@@ -13,7 +13,8 @@ export const FilterCryptoCurrencySchema = z
       .optional(),
   })
   .strict()
-  .describe("Campo inválido");
+  .describe("Campo inválido")
+  .openapi("FilterCrypto");
 
 export type FilterCryptoCurrencyDto = z.infer<
   typeof FilterCryptoCurrencySchema

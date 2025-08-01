@@ -19,6 +19,8 @@ export const OrderCryptoCurrencySchema = z
       .optional(),
   })
   .strict()
-  .describe("Campo inválido");
+  .describe("Campo inválido")
+  .openapi("OrderCrypto");
 
+  
 export type OrderCryptoCurrencyDto = z.infer<typeof OrderCryptoCurrencySchema>;

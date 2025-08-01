@@ -10,6 +10,7 @@ export const UpdateUsersSchema = z
       .enum(["admin", "cliente"], "O valor deve ser (admin) ou (cliente)")
       .optional(),
   })
-  .strict();
+  .strict()
+  .openapi("UpdateUsers");
 
 export type UpdateUsersDto = z.infer<typeof UpdateUsersSchema>;
