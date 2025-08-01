@@ -56,7 +56,8 @@ Neste repositório temos 2 projetos, o primeiro que será apresentado, refere-se
 │       └── index.ts
 └── validate
     └── input
-        └── index.ts```
+        └── index.ts
+```
 
 ## 📚 O projeto (Explicações e informações)
 
@@ -154,7 +155,7 @@ npm run dev
 - [Docker](https://www.docker.com/)
 
 ## 📁 Estrutura do Projeto (app)
-
+```bash
 src/
 
 ├── api
@@ -170,7 +171,7 @@ src/
     ├── database
     │   └── index.ts
     └── timeSleep.ts
-
+```
 ## 📚 O projeto (Explicações e informações)
 
 Este projeto é um job automatizado que consome dados do mercado de criptomoedas via [CoinGecko API](https://www.coingecko.com/), formata os dados relevantes e os armazena em um banco de dados PostgreSQL usando o Prisma ORM. O processo é repetido automaticamente a cada 5 minutos.
