@@ -6,12 +6,12 @@ export const FilterUsersSchema = z
     id: z
       .string()
       .transform((value) => parseInt(value))
+      .refine((value) => !isNaN(Number(value)), {
+        message: "O id não pode ser uma string",
+      })
       .optional(),
-    name: z
-      .string("O nome é obrigatório")
-      .min(1, "O nome não pode ser vazio")
-      .optional(),
-    email: z.email("O email é obrigatório e deve ser válido").optional(),
+    name: z.string().min(1, "O nome não pode ser vazio").optional(),
+    email: z.email("O email deve ser válido").optional(),
     role: z
       .enum(["admin", "cliente"], "O valor deve ser (admin) ou (cliente)")
       .optional(),
