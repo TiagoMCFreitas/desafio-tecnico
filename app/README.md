@@ -1,1 +1,0 @@
-# desafio-tecnico-truther
