@@ -1,4 +1,7 @@
+import { extendZodWithOpenApi } from "@asteasolutions/zod-to-openapi";
 import z from "zod";
+extendZodWithOpenApi(z);
+
 export const CreateUsersSchema = z
   .object({
     name: z.string("O nome é obrigatório").min(1, "O nome não pode ser vazio"),

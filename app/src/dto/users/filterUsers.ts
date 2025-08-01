@@ -1,5 +1,6 @@
+import { extendZodWithOpenApi } from "@asteasolutions/zod-to-openapi";
 import z from "zod";
-export const FilterUsersSchema = z
+extendZodWithOpenApi(z);export const FilterUsersSchema = z
   .object({
     name: z
       .string("O nome é obrigatório")

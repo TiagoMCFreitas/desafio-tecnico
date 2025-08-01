@@ -1,4 +1,6 @@
+import { extendZodWithOpenApi } from "@asteasolutions/zod-to-openapi";
 import z from "zod";
+extendZodWithOpenApi(z);
 export const FilterCryptoCurrencySchema = z
   .object({
     id: z.string().min(1, "O id não pode ser vazio").optional(),

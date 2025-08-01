@@ -1,5 +1,6 @@
+import { extendZodWithOpenApi } from "@asteasolutions/zod-to-openapi";
 import z from "zod";
-export const OrderCryptoCurrencySchema = z
+extendZodWithOpenApi(z);export const OrderCryptoCurrencySchema = z
   .object({
     id: z.enum(["asc", "desc"]).optional(),
     name: z.enum(["asc", "desc"]).optional(),
@@ -22,5 +23,5 @@ export const OrderCryptoCurrencySchema = z
   .describe("Campo inválido")
   .openapi("OrderCrypto");
 
-  
+
 export type OrderCryptoCurrencyDto = z.infer<typeof OrderCryptoCurrencySchema>;
